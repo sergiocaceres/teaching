@@ -29,7 +29,8 @@ EOF
 	rm tmp.tex
 	rm article.aux
 	rm article.log
-	pdf2svg $*.pdf 
+	pdf2svg $*.pdf $*.svg
+
 # Original files
 FIGs := $(wildcard *.fig)
 
