@@ -1,0 +1,46 @@
+\begin{tabular}{ll}
+Initial matrix & Sorted matrix \\
+\begin{tabular}{|c|r}
+\cline{1-1}
+{\tt $<$a$>$babcbababaaaaaaa} & 0\\
+{\tt babcbababaaaaaaa$<$a$>$} & 1\\
+{\tt abcbababaaaaaaa$<$a$>$b} & 2\\
+{\tt bcbababaaaaaaa$<$a$>$ba} & 3\\
+{\tt cbababaaaaaaa$<$a$>$bab} & 4\\
+{\tt bababaaaaaaa$<$a$>$babc} & 5\\
+{\tt ababaaaaaaa$<$a$>$babcb} & 6\\
+{\tt babaaaaaaa$<$a$>$babcba} & 7\\
+{\tt abaaaaaaa$<$a$>$babcbab} & 8\\
+{\tt baaaaaaa$<$a$>$babcbaba} & 9\\
+{\tt aaaaaaa$<$a$>$babcbabab} &10\\
+{\tt aaaaaa$<$a$>$babcbababa} &11\\
+{\tt aaaaa$<$a$>$babcbababaa} &12\\
+{\tt aaaa$<$a$>$babcbababaaa} &13\\
+{\tt aaa$<$a$>$babcbababaaaa} &14\\
+{\tt aa$<$a$>$babcbababaaaaa} &15\\
+{\tt a$<$a$>$babcbababaaaaaa} &16\\
+\cline{1-1}
+\end{tabular}
+&
+\begin{tabular}{|c|rrl}
+\cline{1-1}
+\texttt{aaaaaaa$<$a$>$babcbaba\color{red}{b}} &10 & 0&\\
+{\tt aaaaaa$<$a$>$babcbabab\color{red}{a}} &11 & 1&\\
+{\tt aaaaa$<$a$>$babcbababa\color{red}{a}} &12 & 2&\\
+{\tt aaaa$<$a$>$babcbababaa\color{red}{a}} &13 & 3&\\
+{\tt aaa$<$a$>$babcbababaaa\color{red}{a}} &14 & 4&\\
+{\tt aa$<$a$>$babcbababaaaa\color{red}{a}} &15 & 5&\\
+{\tt a$<$a$>$babcbababaaaaa\color{red}{a}} &16 & 6&\\
+{\tt abaaaaaaa$<$a$>$babcba\color{red}{b}} & 8 & 7&\\
+{\tt ababaaaaaaa$<$a$>$babc\color{red}{b}} & 6 & 8&\\
+{\tt $<$a$>$babcbababaaaaaa\color{red}{a}} & 0 & 9&\\
+{\tt abcbababaaaaaaa$<$a$>$\color{red}{b}} & 2 &10&\\
+{\tt baaaaaaa$<$a$>$babcbab\color{red}{a}} & 9 &11&\\
+{\tt babaaaaaaa$<$a$>$babcb\color{red}{a}} & 7 &12&\\
+{\tt bababaaaaaaa$<$a$>$bab\color{red}{c}} & 5 &13&\\
+{\tt babcbababaaaaaaa$<${\color{red}a}$>$} & 1 &14& $\leftarrow \color{red}{i}$\\
+{\tt bcbababaaaaaaa$<$a$>$b\color{red}{a}} & 3 &15&\\
+{\tt cbababaaaaaaa$<$a$>$ba\color{red}{b}} & 4 &16&\\
+\cline{1-1}
+\end{tabular}
+\end{tabular}
