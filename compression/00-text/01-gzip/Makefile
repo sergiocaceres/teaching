@@ -78,13 +78,9 @@ lena.png:
 	wget http://www.hpca.ual.es/~vruiz/images/lena.png
 TMPs += lena.png
 
-lena-gray.png:	lena.png
-	convert -colorspace gray lena.png lena-gray.png
-TMPs += lena-gray.png
-
-lena.pgm:	lena-gray.png
-	convert lena.png lena.pgm
-TMPs += lena.pgm
+lena.ppm:	lena.png
+	convert lena.png lena.ppm
+TMPs += lena.ppm
 
 boats.png:
 	wget http://www.hpca.ual.es/~vruiz/images/boats.png
@@ -98,13 +94,9 @@ peppers.png:
 	wget http://www.hpca.ual.es/~vruiz/images/peppers.png
 TMPs += peppers.png
 
-peppers-gray.png:	peppers.png
-	convert -colorspace gray peppers.png peppers-gray.png
-TMPs += peppers-gray.png
-
-peppers.pgm:	peppers-gray.png
-	convert peppers.png peppers.pgm
-TMPs += peppers.pgm
+peppers.ppm:	peppers.png
+	convert peppers.png peppers.ppm
+TMPs += peppers.ppm
 
 zelda.png:
 	wget http://www.hpca.ual.es/~vruiz/images/zelda.png
