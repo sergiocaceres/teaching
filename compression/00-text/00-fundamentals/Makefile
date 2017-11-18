@@ -2,7 +2,7 @@ default:	all
 
 # Rules
 
-## .gpt -> .fog
+## .gpt -> .fig
 %.fig:	%.gpt
 	gnuplot $*.gpt
 
