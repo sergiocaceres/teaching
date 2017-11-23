@@ -1,3 +1,3 @@
 presentation:
-	jupyter nbconvert text_compression.ipynb --to slides --post serve
+	jupyter nbconvert fundamentals.ipynb --to slides --post serve
 
